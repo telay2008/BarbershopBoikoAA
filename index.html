@@ -1,12 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Бойко Александр">
+    <meta name="description" content="Барбершоп «Бородинский»">
+    <meta name="keyworlds" content="Барбершоп «Бородинский», Барбершоп, barbershop">
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>Главная страница</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="all-header-block">
+            <nav class="navigation">
+                <ul id="menu" type="none">
+                    <li>
+                        <a href="#info">ИНФОРМАЦИЯ</a>
+                    </li>
+                    <li>
+                        <a href="#news">НОВОСТИ</a>
+                    </li>
+                    <li>
+                        <a href="#price-list">ПРАЙС-ЛИСТ</a>
+                    </li>
+                    <li>
+                        <a href="#shop">МАГАЗИН</a>
+                    </li>
+                    <li>
+                        <a href="#contacts">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="user-block">
+                <input class="registration" type="checkbox">
+                    <label class="open-registration">ВХОД</label>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-block">
+            <figure class="logo">
+                <img src="img/logo.svg" alt="barbershop">
+            </figure>
+        </div>
+        <section class="quickly">
+            <div class="quickly-block">
+                <div>БЫСТРО</div>
+                <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА<br>
+                ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ - СЧАСЛИВЫЙ<br>
+                ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!
+                </p>
+            </div>
+        </section>
+        <section class="cool">
+            <div class="cool-block">
+                <div>КРУТО</div>
+                <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.<br> 
+                МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!<br>
+                ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.
+                </p>
+            </div>
+        </section>
+        <section class="expensive">
+            <div class="expensive-block">
+                <div>ДОРОГО</div>
+                <p>НАШИ МАСТЕРА - ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И<br> 
+                НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА<br>
+                НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?
+                </p>
+            </div>
+        </section>
+        <div class="news-foto">
+            <section class="news">
+                <h2 class="Paragraph2">НОВОСТИ</h2>
+                <ul class="news" type="none">
+                    <li>
+                        НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ<br>
+                        ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ<br>
+                        <time datetime="2021-01-11">11 января</time>
+                    </li>
+                    <li>
+                        В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС "БРИТВА" СТРИГУНЕЦ,<br>
+                        ОБЛАДАТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ<br>
+                        СТРОЙНЫЕ РЯДЫ<br>
+                        <time datetime="2021-01-18">18 января</time>
+                    </li>
+                </ul>
+                <a href="#" class="btn"></a>
+            </section>
+            <section class="foto">
+                <h2 class="Paragraph2">ФОТОГАЛЕРЕЯ</h2>
+                <div class="foto">
+                    <figure class="foto">
+                        <a href="#" class="btn">
+                            <img src="img/foto">
+                        </a>
+                    </figure>
+                    <button class="btn-foto">НАЗАД</button>
+                    <button class="btn-foto">ВПЕРЕД</button>
+                </div>
+            </section>
+        </div>
+        <div class="contakt-info-record">
+            <section class="contakt-info">
+                
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div>
+
+        </div>
+    </footer>
+    <script scr="javascript/main.js"></script>
 </body>
 </html>
