@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Карточка товара барбершопа «Бородинский»">
+    <meta name="keyworlds" content="Набор для путешествий baxter of california, baxter of california">
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>Карточка товара</title>
+</head>
+<body>
+    <header class="header">
+        <div class="all-header-block">
+            <nav class="navigation">
+                <ul id="menu" type="none">
+                    <li>
+                        <figure class="logo">
+                            <!--При нажатии на логотип, не переходит на главную страницу-->
+                            <p>
+                                <a href="index.html"></a>
+                                <img src="img/index-logo.svg" width="150" alt="Главная страница">
+                            </p>
+                        </figure>
+                    </li>
+                    <li>
+                        <a href="index.html#info">ИНФОРМАЦИЯ</a>
+                    </li>
+                    <li>
+                        <a href="index.html#news">НОВОСТИ</a>
+                    </li>
+                    <li>
+                        <a href="price.html">ПРАЙС-ЛИСТ</a>
+                    </li>
+                    <li class="active">
+                        <span>МАГАЗИН</span>
+                    </li>
+                    <li>
+                        <a href="index.html#contacts">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="user-block">
+                <input class="registration" type="checkbox">
+                    <label class="open-registration">ВХОД</label>
+                    <!--Всплывающее регистрационное окно-->
+                <div class="registration-pop-up-window">
+                    <div class="registration-pop-up-window-close">Закрыть</div>
+                    <h2>ЛИЧНЫЙ КАБИНЕТ</h2>
+                    <p>Введите, пожалуйста, свой логин и пароль</p>
+                    <form class="login-form" action method>
+                        <input type="text" class="icon-user" name="login" placeholder="Логин" required><br>
+                        <input type="password" class="icon-password" name="password" placeholder="Пароль" required><br>
+                        <input type="checkbox" name="remember" id="remember-me">
+                        <label for="remember-me">ЗАПОМНИТЕ МЕНЯ</label>
+                        <a href="#" class="restore">Я ЗАБЫЛ ПАРОЛЬ!</a><br>
+                        <button type="submit" class="btn">ВОЙТИ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="all-item">
+            <div>
+                <h1>НАБОР ДЛЯ ПУТЕШЕСТВИЙ "BAXTER OF CALIFORNIA"</h1>
+                <ul class="ladder" type="none">
+                    <li>
+                        <a href="index.html">ГЛАВНАЯ</a> 
+                    </li>
+                    <li>
+                        <a href="chop.html">МАГАЗИН</a> 
+                    </li>
+                    <li>
+                        <a href="chop.html">СРЕДСТВА ДЛЯ УХОДА</a> 
+                    </li>
+                    <li>
+                        <p>НАБОР ДЛЯ ПУТЕШЕСТВИЙ "BAXTER OF CALIFORNIA"</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

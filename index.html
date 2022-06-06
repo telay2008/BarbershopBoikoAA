@@ -21,10 +21,10 @@
                         <a href="#news">НОВОСТИ</a>
                     </li>
                     <li>
-                        <a href="#price-list">ПРАЙС-ЛИСТ</a>
+                        <a href="price.html">ПРАЙС-ЛИСТ</a>
                     </li>
                     <li>
-                        <a href="#shop">МАГАЗИН</a>
+                        <a href="shop.html">МАГАЗИН</a>
                     </li>
                     <li>
                         <a href="#contacts">КОНТАКТЫ</a>
@@ -34,82 +34,155 @@
             <div class="user-block">
                 <input class="registration" type="checkbox">
                     <label class="open-registration">ВХОД</label>
+                        <!--Всплывающее регистрационное окно-->
+                        <div class="registration-pop-up-window">
+                            <div class="registration-pop-up-window-close">Закрыть</div>
+                            <h2>ЛИЧНЫЙ КАБИНЕТ</h2>
+                            <p>Введите, пожалуйста, свой логин и пароль</p>
+                            <form class="login-form" action method>
+                                <input type="text" class="icon-user" name="login" placeholder="Логин" required><br>
+                                <input type="password" class="icon-password" name="password" placeholder="Пароль" required><br>
+                                <input type="checkbox" name="remember" id="remember-me">
+                                <label for="remember-me">ЗАПОМНИТЕ МЕНЯ</label>
+                                <a href="#" class="restore">Я ЗАБЫЛ ПАРОЛЬ!</a><br>
+                                <button type="submit" class="btn">ВОЙТИ</button>
+                            </form>
+                        </div>
             </div>
         </div>
     </header>
-    <main class="main">
-        <div class="main-block">
-            <figure class="logo">
-                <img src="img/logo.svg" alt="barbershop">
-            </figure>
-        </div>
-        <section class="quickly">
-            <div class="quickly-block">
-                <div>БЫСТРО</div>
-                <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА<br>
-                ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ - СЧАСЛИВЫЙ<br>
-                ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!
-                </p>
+    <main>
+        <div class="index">
+            <div class="main-block">
+                <figure class="logo">
+                    <img src="img/logo.svg" alt="barbershop">
+                </figure>
             </div>
-        </section>
-        <section class="cool">
-            <div class="cool-block">
-                <div>КРУТО</div>
-                <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.<br> 
-                МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!<br>
-                ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.
-                </p>
-            </div>
-        </section>
-        <section class="expensive">
-            <div class="expensive-block">
-                <div>ДОРОГО</div>
-                <p>НАШИ МАСТЕРА - ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И<br> 
-                НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА<br>
-                НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?
-                </p>
-            </div>
-        </section>
-        <div class="news-foto">
-            <section class="news">
-                <h2 class="Paragraph2">НОВОСТИ</h2>
-                <ul class="news" type="none">
-                    <li>
-                        НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ<br>
-                        ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ<br>
-                        <time datetime="2021-01-11">11 января</time>
-                    </li>
-                    <li>
-                        В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС "БРИТВА" СТРИГУНЕЦ,<br>
-                        ОБЛАДАТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ<br>
-                        СТРОЙНЫЕ РЯДЫ<br>
-                        <time datetime="2021-01-18">18 января</time>
-                    </li>
-                </ul>
-                <a href="#" class="btn"></a>
-            </section>
-            <section class="foto">
-                <h2 class="Paragraph2">ФОТОГАЛЕРЕЯ</h2>
-                <div class="foto">
-                    <figure class="foto">
-                        <a href="#" class="btn">
-                            <img src="img/foto">
-                        </a>
-                    </figure>
-                    <button class="btn-foto">НАЗАД</button>
-                    <button class="btn-foto">ВПЕРЕД</button>
+            <section class="quickly">
+                <div class="quickly-block">
+                    <div>БЫСТРО</div>
+                    <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА<br>
+                    ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ - СЧАСЛИВЫЙ<br>
+                    ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!
+                    </p>
                 </div>
             </section>
-        </div>
-        <div class="contakt-info-record">
-            <section class="contakt-info">
-                
+            <section class="cool">
+                <div class="cool-block">
+                    <div>КРУТО</div>
+                    <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.<br> 
+                    МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!<br>
+                    ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.
+                    </p>
+                </div>
             </section>
+            <section class="expensive">
+                <div class="expensive-block">
+                    <div>ДОРОГО</div>
+                    <p>НАШИ МАСТЕРА - ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И<br> 
+                    НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА<br>
+                    НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?
+                    </p>
+                </div>
+            </section>
+            <div class="news-photogallery">
+                <section class="news">
+                    <a name="news"></a>
+                    <h2 class="Paragraph2">НОВОСТИ</h2>
+                    <ul class="news" type="none">
+                        <li>
+                            НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ<br>
+                            ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ<br>
+                            <time datetime="2021-01-11">11 января</time>
+                        </li>
+                        <li>
+                            В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС "БРИТВА" СТРИГУНЕЦ,<br>
+                            ОБЛАДАТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ<br>
+                            СТРОЙНЫЕ РЯДЫ<br>
+                            <time datetime="2021-01-18">18 января</time>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn"></a>
+                </section>
+                <section class="photogallery">
+                    <h2 class="Paragraph2">ФОТОГАЛЕРЕЯ</h2>
+                    <div class="photogallery">
+                        <figure class="photogallery">
+                            <a href="#" class="btn">
+                                <img src="img/photogallery">
+                            </a>
+                        </figure>
+                        <button class="btn-photogallery">НАЗАД</button>
+                        <button class="btn-photogallery">ВПЕРЕД</button>
+                    </div>
+                </section>
+            </div>
+            <div class="contakt-info-record">
+                <section class="contakt-info">
+                    <a name="info"></a>
+                    <a name="contacts"></a>
+                    <h2 class="Paragraph2">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+                    <div class="contakt-info">
+                        <p>БАРБЕРШОП "БОРОДИНСКИЙ"<br>
+                        АДРЕС: Г. САНКТ-ПЕРЕТБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
+                        ТЕЛЕФОН: +7(495)666-02-66
+                        </p>
+                        <p>ВРЕМЯ РАБОТЫ:<br>
+                        ПН-ПТ: С 10:00 ДО 22:00<br>
+                        СБ-ВС: С 10:00 ДО 19:00
+                        </p>
+                        <a href="#" class="btn-maps">КАК ПРОЕХАТЬ</a>
+                        <a href="#" class="btn">ОБРАТНАЯ СВЯЗЬ</a>
+                    </div>  
+                </section>
+                <section class="record">
+                    <h2 class="Paragraph2">ЗАПИСАТЬСЯ</h2>
+                    <div class="record">
+                        <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ<br>
+                        С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
+                        </p>
+                        <form>
+                            <div class="date">
+                                <label>ДАТА</label><br>
+                                <input type="date" name="date">
+                            </div>
+                            <div class="time">
+                                <label>ВРЕМЯ</label><br>
+                                <input type="time" name="time">
+                            </div>
+                            <div class="main-name">
+                                <label>ВАШЕ ИМЯ</label><br>
+                                <input type="text" name="name" placeholder="Введите Ваше имя">
+                            </div>
+                            <div class="phone">
+                                <label>ТЕЛЕФОН</label><br>
+                                <input type="text" name="phone" placeholder="Введите Ваш номер">
+                            </div>
+                            <button class="btm-record">ОТПРАВИТЬ</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
         </div>
     </main>
     <footer>
-        <div>
-
+        <div class="footer">
+            <section class="footer-contakt">
+                <p>БАРБЕРШОП "БОРОДИНСКРЙ"<br>
+                АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8</p>
+                <a href="#">КАК НАС НАЙТИ?</a>
+                <p>ТЕЛЕФОН: +7(495)666-02-66</p>
+            </section>
+            <section class="social-networks">
+                <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
+                <a href="#" class="btn-VK">VK</a>
+                <a href="#" class="btn-FB">Facebook</a>
+                <a href="#" class="btn-Insta">Instagram</a>
+            </section>
+            <section class="developer">
+                <p>РАЗРАБОТАНО:</p>
+                <a href="https://www.energoopora.by/контакты" target="_blank">САНЕЙ</a>
+            </section>
         </div>
     </footer>
     <script scr="javascript/main.js"></script>

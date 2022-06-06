@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="прайс-лист барбершопа «Бородинский»">
+    <meta name="keyworlds" content="прайс барбершопа «Бородинский», price barbershop">
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>Прайс-лист</title>
+</head>
+<body>
+    <header class="header">
+        <div class="all-header-block">
+            <nav class="navigation">
+                <ul id="menu" type="none">
+                    <li>
+                        <figure class="logo">
+                            <!--При нажатии на логотип, не переходит на главную страницу-->
+                            <p>
+                                <a href="index.html"></a>
+                                <img src="img/index-logo.svg" width="150" alt="Главная страница">
+                            </p>
+                        </figure>
+                    </li>
+                    <li>
+                        <a href="index.html#info">ИНФОРМАЦИЯ</a>
+                    </li>
+                    <li>
+                        <a href="index.html#news">НОВОСТИ</a>
+                    </li>
+                    <li class="active">
+                        <span>ПРАЙС-ЛИСТ</span>
+                    </li>
+                    <li>
+                        <a href="shop.html">МАГАЗИН</a>
+                    </li>
+                    <li>
+                        <a href="index.html#contacts">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="user-block">
+                <input class="registration" type="checkbox">
+                    <label class="open-registration">ВХОД</label>
+                    <!--Всплывающее регистрационное окно-->
+                <div class="registration-pop-up-window">
+                    <div class="registration-pop-up-window-close">Закрыть</div>
+                    <h2>ЛИЧНЫЙ КАБИНЕТ</h2>
+                    <p>Введите, пожалуйста, свой логин и пароль</p>
+                    <form class="login-form" action method>
+                        <input type="text" class="icon-user" name="login" placeholder="Логин" required><br>
+                        <input type="password" class="icon-password" name="password" placeholder="Пароль" required><br>
+                        <input type="checkbox" name="remember" id="remember-me">
+                        <label for="remember-me">ЗАПОМНИТЕ МЕНЯ</label>
+                        <a href="#" class="restore">Я ЗАБЫЛ ПАРОЛЬ!</a><br>
+                        <button type="submit" class="btn">ВОЙТИ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="all-price">
+            <div class="ladder">
+                <h1>ПРАЙС-ЛИСТ</h1>
+                <ul class="ladder" type="none">
+                    <li>
+                        <a href="index.html">ГЛАВНАЯ</a> 
+                    </li>
+                    <li>
+                        <p>ПРАЙС-ЛИСТ</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="slogan">
+                <h2>ИСТИННО МУЖСКАЯ КЛАССИКА</h2>
+            </div>
+            <div class="advantages-price">
+                <div class="advantages">
+                    <h2>МЫ ИСПОЛЬЗУЕМ ТОЛЬКО<br>
+                    ЛУЧШИЕ СРЕДСТВА:
+                    </h2>
+                    <ul class="advantages" type="none">
+                        <li>BAXTER OF CALIFORNIA</li>
+                        <li>MR NATTY</li>
+                        <li>SUAVECITO</li>
+                        <li>MALIN+GJETZ</li>
+                    </ul>
+                </div>
+                <div class="price">
+                    <h2>ЦЕНЫ НА УСЛУГИ<br>
+                    НАШИХ МАСТЕРОВ
+                    </h2>
+                        <!--ТАБЛИЦУ ЛУЧШЕ ДОБАВИТЬ ЧЕРЕЗ CSS-->
+                    <table class="price" border="3" width="300px">
+                        <tbody>
+                            <tr>
+                                <td>СТРИЖКА</td>
+                                <td>1500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>СТРИЖКА БОРОДЫ</td>
+                                <td>500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>НАКРУТКА УСОВ</td>
+                                <td>350 ₽</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="about-us">
+                <h2>НЕСКОЛЬКО СЛОВ О НАС:</h2>
+                <div class="about-us-left">
+                    <div class="about-us-text">
+                        НАША ПАРИКМАХЕРСКАЯ ЗАНИМАЕТСЯ ИСКЛЮЧИТЕЛЬНО МУЖСКИМИ<br>
+                        СТРИЖКАМИ. СТРИЖКА КАЖДОГО КЛИЕНТА ДЛЯ НАС - ЭТО УНИКАЛЬНАЯ<br>
+                        И ПРОДУМАННАЯ ДО МЕЛОЧЕЙ РАБОТА. МЫ НЕ РАБОТАЕМ НА<br>
+                        КОЛИЧЕСТВО, МЫ ДЕЛАЕМ КАЧЕСТВО.
+                    </div>
+                </div>
+                <div class="about-us-right">
+                    <div class="about-us-text">
+                        НАША МАСТЕРСКАЯ РАСПОЛОЖЕНА В ЦЕНТРЕ ГОРОДА, ПОЭТОМУ<br>
+                        СДЕЛАТЬ СТИЛЬНУЮ СТРИЖКУ МОЖНО В ЛЮБОЕ ВРЕМЯ, ДАЖЕ В<br>
+                        ОБЕДЕННЫЙ ПЕРЕРЫВ. ЗДЕСЬ ВЫ МОЖЕТЕ ПОГРУЗИТЬСЯ В УДОБНУЮ<br>
+                        ДЛЯ ВАС АТМОСФЕРУ, ЧУВСТВОВАТЬ СЕБЯ КОМФОРТНО И СВОБОДНО!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <section class="footer-contakt">
+                <p>БАРБЕРШОП "БОРОДИНСКРЙ"<br>
+                АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8</p>
+                <a href="#">КАК НАС НАЙТИ?</a>
+                <p>ТЕЛЕФОН: +7(495)666-02-66</p>
+            </section>
+            <section class="social-networks">
+                <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
+                <a href="#" class="btn-VK">VK</a>
+                <a href="#" class="btn-FB">Facebook</a>
+                <a href="#" class="btn-Insta">Instagram</a>
+            </section>
+            <section class="developer">
+                <p>РАЗРАБОТАНО:</p>
+                <a href="https://www.energoopora.by/контакты" target="_blank">САНЕЙ</a>
+            </section>
+        </div>
+    </footer>
+    <script scr="javascript/main.js"></script>
+</body>
+</html>
