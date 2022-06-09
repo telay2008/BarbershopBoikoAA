@@ -6,48 +6,45 @@
     <meta name="author" content="Бойко Александр">
     <meta name="description" content="Барбершоп «Бородинский»">
     <meta name="keyworlds" content="Барбершоп «Бородинский», Барбершоп, barbershop">
-    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Главная страница</title>
 </head>
 <body>
     <header class="header">
-        <div class="all-header-block">
-            <nav class="navigation">
-                <ul id="menu" type="none">
-                    <li>
-                        <a href="#info">Информация</a>
-                    </li>
-                    <li>
-                        <a href="#news">Новости</a>
-                    </li>
-                    <li>
-                        <a href="price.html">Прайс-лист</a>
-                    </li>
-                    <li>
-                        <a href="shop.html">Магазин</a>
-                    </li>
-                    <li>
-                        <a href="#contacts">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="user-block">
-                <input class="registration" type="checkbox">
-                    <label class="open-registration">Вход</label>
-                        <!--Всплывающее регистрационное окно-->
-                        <div class="registration-pop-up-window">
-                            <div class="registration-pop-up-window-close">Закрыть</div>
-                            <h2>Личный кабинет</h2>
-                            <p>Введите, пожалуйста, свой логин и пароль</p>
-                            <form class="login-form" action method>
-                                <input type="text" class="icon-user" name="login" placeholder="Логин" required><br>
-                                <input type="password" class="icon-password" name="password" placeholder="Пароль" required><br>
-                                <input type="checkbox" name="remember" id="remember-me">
-                                <label for="remember-me">Запомните меня</label>
-                                <a href="#" class="restore">Я забыл пароль!</a><br>
-                                <button type="submit" class="btn">Войти</button>
-                            </form>
-                        </div>
+        <nav class="navigation">
+            <ul id="menu">
+                <li>
+                    <a href="#info">Информация</a>
+                </li>
+                <li>
+                    <a href="#news">Новости</a>
+                </li>
+                <li>
+                    <a href="price.html">Прайс-лист</a>
+                </li>
+                <li>
+                    <a href="shop.html">Магазин</a>
+                </li>
+                <li>
+                    <a href="#contacts">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="user-block">
+            <div class="registration"><button>Вход</button></div>
+                <!--Всплывающее регистрационное окно-->
+            <div class="registration-pop-up-window">
+                <div class="registration-pop-up-window-close">Закрыть</div>
+                <h2>Личный кабинет</h2>
+                <p>Введите, пожалуйста, свой логин и пароль</p>
+                <form class="login-form" action method>
+                    <input type="text" class="icon-user" name="login" placeholder="Логин" required><br>
+                    <input type="password" class="icon-password" name="password" placeholder="Пароль" required><br>
+                    <input type="checkbox" name="remember" id="remember-me">
+                    <label for="remember-me">Запомните меня</label>
+                    <a href="#" class="restore">Я забыл пароль!</a><br>
+                    <button type="submit" class="btn">Войти</button>
+                </form>
             </div>
         </div>
     </header>
@@ -89,7 +86,7 @@
                 <section class="news">
                     <a name="news"></a>
                     <h2 class="Paragraph2">Новости</h2>
-                    <ul class="news" type="none">
+                    <ul class="news">
                         <li>
                             Нам наконец завезли ягермайстер! Теперь Вы можете<br>
                             пропустить стаканчик во время стрижки<br>
@@ -98,11 +95,11 @@
                         <li>
                             В нашей команде пополнение, Борис "Бритва" стригунец,<br>
                             обладатель множества титулов и наград пополнил наши<br>
-                            стройные рябы<br>
+                            стройные ряды<br>
                             <time datetime="2021-01-18">18 января</time>
                         </li>
                     </ul>
-                    <a href="#" class="btn"></a>
+                    <a href="#" class="btn-link">Все новости</a>
                 </section>
                 <section class="photogallery">
                     <h2 class="Paragraph2">Фотогалерея</h2>
@@ -119,8 +116,6 @@
             </div>
             <div class="contakt-info-record">
                 <section class="contakt-info">
-                    <a name="info"></a>
-                    <a name="contacts"></a>
                     <h2 class="Paragraph2">Контактная информация</h2>
                     <div class="contakt-info">
                         <p>Барбершоп "Бородинский"<br>
@@ -131,8 +126,8 @@
                         ПН-ПТ: С 10:00 ДО 22:00<br>
                         СБ-ВС: С 10:00 ДО 19:00
                         </p>
-                        <a href="#" class="btn-maps">Как проехать</a>
-                        <a href="#" class="btn">Обратная связь</a>
+                        <a href="#" class="btn-link-maps">Как проехать</a>
+                        <a href="#" class="btn-link">Обратная связь</a>
                     </div>  
                 </section>
                 <section class="record">
@@ -144,19 +139,19 @@
                         <form>
                             <div class="date">
                                 <label>Дата</label><br>
-                                <input type="date" name="date">
+                                <input type="text" name="date" placeholder="08.10.2017">
                             </div>
                             <div class="time">
                                 <label>Время</label><br>
-                                <input type="time" name="time">
+                                <input type="text" name="time" placeholder="10:00">
                             </div>
                             <div class="main-name">
-                                <label>ВАШЕ ИМЯ</label><br>
-                                <input type="text" name="name" placeholder="Введите Ваше имя">
+                                <label>Ваше имя</label><br>
+                                <input type="text" name="name" placeholder="Борода">
                             </div>
                             <div class="phone">
                                 <label>Телефон</label><br>
-                                <input type="text" name="phone" placeholder="Введите Ваш номер">
+                                <input type="text" name="phone" placeholder="+7 123 456-78-90">
                             </div>
                             <button class="btm-record">Отправить</button>
                         </form>
@@ -167,18 +162,32 @@
     </main>
     <footer>
         <div class="footer">
-            <section class="footer-contakt">
-                <p>Барбершоп "Бородинский"<br>
-                Адрес: г. Санкт-Петербург, б. Конюшенная, д. 19/8</p>
-                <a href="#">Как нас найти?</a>
-                <p>ТЕЛЕФОН: +7(495)666-02-66</p>
-            </section>
-            <section class="social-networks">
-                <p>Давайте дружить!</p>
-                <a href="#" class="btn-VK">VK</a>
-                <a href="#" class="btn-FB">Facebook</a>
-                <a href="#" class="btn-Insta">Instagram</a>
-            </section>
+            <ul class="footer-contakt">
+                <li>
+                    Барбершоп "Бородинский"<br>
+                    Адрес: г. Санкт-Петербург, б. Конюшенная, д. 19/8
+                </li>
+                <li>
+                    <a href="#">Как нас найти?</a>
+                </li>
+                <li>
+                    Телефон: +7(495)666-02-66
+                </li>
+            </ul>
+            <ul class="social-networks">
+                <li>
+                    Давайте дружить!
+                </li>
+                <li>
+                    <a href="#" class="btn-VK">VK</a>
+                </li>
+                <li>
+                    <a href="#" class="btn-FB">Facebook</a>
+                </li>
+                <li>
+                    <a href="#" class="btn-Insta">Instagram</a>
+                </li>
+            </ul>
             <section class="developer">
                 <p>Разработано:</p>
                 <a href="https://www.energoopora.by/контакты" target="_blank">САНЕЙ</a>
