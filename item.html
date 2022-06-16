@@ -1,154 +1,166 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Карточка товара барбершопа «Бородинский»">
-    <meta name="keyworlds" content="Набор для путешествий baxter of california, baxter of california">
-    <link rel="stylesheet" href="CSS/main.css">
-    <title>Карточка товара</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="Бойко Александр">
+	<meta name="description" content="Карточка товара барбершопа «Бородинский»">
+	<meta name="keyworlds" content="Набор для путешествий baxter of california, baxter of california">
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="/css/item.css">
+	<link rel="stylesheet" href="/fonts/stylesheet.css">
+	<title>Карточка товара</title>
 </head>
-<body>
-    <header class="header">
-        <div class="all-header-block">
-            <nav class="navigation">
-                <ul id="menu">
-                    <li>
-                        <figure class="logo">
-                            <a href="index.html">
-                                <img src="img/index-logo.svg" width="150" alt="Главная страница">  
-                            </a>                            
-                        </figure>
-                    </li>
-                    <li>
-                        <a href="index.html#info">Информация</a>
-                    </li>
-                    <li>
-                        <a href="index.html#news">Новости</a>
-                    </li>
-                    <li>
-                        <a href="price.html">Прайс-лист</a>
-                    </li>
-                    <li class="active">
-                        <span>Магазин</span>
-                    </li>
-                    <li>
-                        <a href="index.html#contacts">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="user-block">
-                <div class="registration"><button>Вход</button></div>
-                    <!--Всплывающее регистрационное окно-->
-                <div class="registration-pop-up-window">
-                    <div class="registration-pop-up-window-close">Закрыть</div>
-                    <h2>ЛИЧНЫЙ КАБИНЕТ</h2>
-                    <p>Введите, пожалуйста, свой логин и пароль</p>
-                    <form class="login-form" action method>
-                        <input type="text" class="icon-user" name="login" placeholder="Логин" required><br>
-                        <input type="password" class="icon-password" name="password" placeholder="Пароль" required><br>
-                        <input type="checkbox" name="remember" id="remember-me">
-                        <label for="remember-me">Запомните меня</label>
-                        <a href="#" class="restore">Я забыл пароль!</a><br>
-                        <button type="submit" class="btn">Войти</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main>
-        <div class="all-item">
-            <div class="ladder">
-                <h1>Набор для путешествий "BAXTER OF CALIFORNIA"</h1>
-                <ul class="ladder">
-                    <li>
-                        <a href="index.html">Гглавная</a> 
-                    </li>
-                    <li>
-                        <a href="chop.html">Магазин</a> 
-                    </li>
-                    <li>
-                        <a href="chop.html">Средства для ухода</a> 
-                    </li>
-                    <li>
-                        <p>Набор для путешествий "BAXTER OF CALIFORNIA"</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="photo-description-price-set">
-                <div class="photo-all">
-                    <img src="img/photo-1" alt="photo-1">
-                    <a href="#">
-                        <img src="img/photo-2" alt="photo-2">
-                    </a>
-                    <a href="#">
-                        <img src="img/photo-3" alt="photo-3">
-                    </a>
-                    <a href="#">
-                        <img src="img/photo-4" alt="photo-4">
-                    </a>
-                </div>
-                <div class="description-price-set">
-                    <div class="description">Есть в наличии</div>
-                    <div class="artikul">Артикул:
-                        <nobr>DEXTER-AE</nobr>
-                    </div>
-                </div>
-                <div class="description">
-                    <p>TRAVEL KIT - необходимый аксессуар во время любого<br>
-                    путешествия, в аккуратной кожанной сумке находится всё, что<br>
-                    нужно для бритья и ухода за кожей во время рабочей поездки<br>
-                    или отдыха: средство для умывания, увлажняющий крем, крем<br>
-                    для бритья, крем после бритья, шампунь. Набор также может<br>
-                    стать отличным подарком.
-                    </p>
-                </div>
-                <div class="price">2 900 ₽</div>
-                <a href="#">Купить</a>
-                <h2>В набор входит:</h2>
-                <ul class="set">
-                    <li>Средство для умывания (50мл)</li>
-                    <li>Увлажняющий крем (50мл)</li>
-                    <li>Крем для бритья (50мл)</li>
-                    <li>Крем после бритья, шампунь (50мл)</li>
-                    <li>Удобная кожаная косметичка</li>
-                </ul>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="footer">
-            <ul class="footer-contakt">
-                <li>
-                    Барбершоп "Бородинский"<br>
-                    Адрес: г. Санкт-Петербург, б. Конюшенная, д. 19/8
-                </li>
-                <li>
-                    <a href="#">Как нас найти?</a>
-                </li>
-                <li>
-                    Телефон: +7(495)666-02-66
-                </li>
-            </ul>
-            <ul class="social-networks">
-                <li>
-                    Давайте дружить!
-                </li>
-                <li>
-                    <a href="#" class="btn-VK">VK</a>
-                </li>
-                <li>
-                    <a href="#" class="btn-FB">Facebook</a>
-                </li>
-                <li>
-                    <a href="#" class="btn-Insta">Instagram</a>
-                </li>
-            </ul>
-            <section class="developer">
-                <p>Разработано:</p>
-                <a href="https://www.energoopora.by/контакты" target="_blank">САНЕЙ</a>
-            </section>
-        </div>
-    <script scr="javascript/main.js"></script>
+
+<body class="main-page">
+	<header class="header">
+		<nav class="nav">
+			<ul id="menu">
+				<li>
+					<figure class="logo">
+						<a href="index.html">
+							<img src="/img/item/logo-small.png" width="150" alt="Главная страница">
+						</a>
+					</figure>
+				</li>
+				<li>
+					<a href="index.html#info">Информация</a>
+				</li>
+				<li>
+					<a href="index.html#news">Новости</a>
+				</li>
+				<li>
+					<a href="price.html">Прайс-лист</a>
+				</li>
+				<li class="active">
+					<span>Магазин</span>
+				</li>
+				<li>
+					<a href="index.html#contacts">Контакты</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="user-block">
+			<div class="registration">
+				<button<img src="/img/index/Shape.png">Вход</button>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="all-item">
+			<div class="ladder">
+				<h1>Набор для путешествий "BAXTER OF CALIFORNIA"</h1>
+				<ul class="ladder">
+					<li>
+						<a href="index.html">Гглавная</a>
+					</li>
+					<li>
+						<a href="chop.html">Магазин</a>
+					</li>
+					<li>
+						<a href="chop.html">Средства для ухода</a>
+					</li>
+					<li>
+						<p>Набор для путешествий "BAXTER OF CALIFORNIA"</p>
+					</li>
+				</ul>
+			</div>
+			<div class="photo-description-price-set">
+				<div class="photo-all">
+					<img src="/img/item/Layer 47 copy.svg" alt="photo-1">
+					<a href="#">
+						<img src="/img/item/Layer 45.svg" alt="photo-2">
+					</a>
+					<a href="#">
+						<img src="/img/item/Layer 46.svg" alt="photo-3">
+					</a>
+					<a href="#">
+						<img src="/img/item/Layer 47.svg" alt="photo-4">
+					</a>
+				</div>
+				<div class="description-price-set">
+					<div class="description">Есть в наличии</div>
+					<div class="artikul">Артикул:
+						<nobr>DEXTER-AE</nobr>
+					</div>
+				</div>
+				<div class="description">
+					<p>TRAVEL KIT - необходимый аксессуар во время любого<br>
+						путешествия, в аккуратной кожанной сумке находится всё, что<br>
+						нужно для бритья и ухода за кожей во время рабочей поездки<br>
+						или отдыха: средство для умывания, увлажняющий крем, крем<br>
+						для бритья, крем после бритья, шампунь. Набор также может<br>
+						стать отличным подарком.
+					</p>
+				</div>
+				<div class="price">2 900 ₽</div>
+				<a href="#">Купить</a>
+				<h2>В набор входит:</h2>
+				<ul class="set">
+					<li>Средство для умывания (50мл)</li>
+					<li>Увлажняющий крем (50мл)</li>
+					<li>Крем для бритья (50мл)</li>
+					<li>Крем после бритья, шампунь (50мл)</li>
+					<li>Удобная кожаная косметичка</li>
+				</ul>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="footer">
+			<ul class="footer-contakt">
+				<li>
+					Барбершоп "Бородинский"<br>
+					Адрес: г. Санкт-Петербург, б. Конюшенная, д. 19/8
+				</li>
+				<li>
+					<a href="#">Как нас найти?</a>
+				</li>
+				<li>
+					Телефон: +7(495)666-02-66
+				</li>
+			</ul>
+			<ul class="social-networks">
+				<li>
+					Давайте дружить!
+				</li>
+				<li>
+					<a href="#" class="btn-VK">
+						<img src="/img/index/vk.png">
+					</a>
+				</li>
+				<li>
+					<a href="#" class="btn-FB">
+						<img src="/img/index/facebook.png">
+					</a>
+				</li>
+				<li>
+					<a href="#" class="btn-Insta">
+						<img src="/img/index/insta.png">
+				</li>
+			</ul>
+			<section class="developer">
+				<p>Разработано:</p>
+				<a href="https://www.energoopora.by/контакты" target="_blank">САНЕЙ</a>
+			</section>
+		</div>
+	</footer>
+	<script scr="javascript/main.js"></script>
+	<!--Всплывающее регистрационное окно-->
+	<div class="registration-pop-up-window">
+		<div class="registration-pop-up-window-close">Закрыть</div>
+		<h2>ЛИЧНЫЙ КАБИНЕТ</h2>
+		<p>Введите, пожалуйста, свой логин и пароль</p>
+		<form class="login-form" action method>
+			<input type="text" class="icon-user" name="login" placeholder="Логин" required><br>
+			<input type="password" class="icon-password" name="password" placeholder="Пароль" required><br>
+			<input type="checkbox" name="remember" id="remember-me">
+			<label for="remember-me">Запомните меня</label>
+			<a href="#" class="restore">Я забыл пароль!</a><br>
+			<button type="submit" class="btn">Войти</button>
+		</form>
+	</div>
 </body>
+
 </html>

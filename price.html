@@ -1,167 +1,178 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="прайс-лист барбершопа «Бородинский»">
-    <meta name="keyworlds" content="прайс барбершопа «Бородинский», price barbershop">
-    <link rel="stylesheet" href="CSS/main.css">
-    <title>Прайс-лист</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="Бойко Александр">
+	<meta name="description" content="прайс-лист барбершопа «Бородинский»">
+	<meta name="keyworlds" content="прайс барбершопа «Бородинский», price barbershop">
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="/css/price.css">
+	<link rel="stylesheet" href="/fonts/stylesheet.css">
+	<title>Прайс-лист</title>
 </head>
-<body>
-    <header class="header">
-        <div class="all-header-block">
-            <nav class="navigation">
-                <ul id="menu">
-                    <li>
-                        <figure class="logo">
-                            <a href="index.html">
-                                <img src="img/index-logo.svg" width="150" alt="Главная страница">  
-                            </a>                            
-                        </figure>
-                    </li>
-                    <li>
-                        <a href="index.html#info">Информация</a>
-                    </li>
-                    <li>
-                        <a href="index.html#news">Новости</a>
-                    </li>
-                    <li class="active">
-                        <span>Прайс-лист</span>
-                    </li>
-                    <li>
-                        <a href="shop.html">Магазин</a>
-                    </li>
-                    <li>
-                        <a href="index.html#contacts">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="user-block">
-                <div class="registration"><button>Вход</button></div>
-                    <!--Всплывающее регистрационное окно-->
-                <div class="registration-pop-up-window">
-                    <div class="registration-pop-up-window-close">Закрыть</div>
-                    <h2>Личный кабинет</h2>
-                    <p>Введите, пожалуйста, свой логин и пароль</p>
-                    <form class="login-form" action method>
-                        <input type="text" class="icon-user" name="login" placeholder="Логин" required><br>
-                        <input type="password" class="icon-password" name="password" placeholder="Пароль" required><br>
-                        <input type="checkbox" name="remember" id="remember-me">
-                        <label for="remember-me">Запомните меня</label>
-                        <a href="#" class="restore">Я забыл пароль!</a><br>
-                        <button type="submit" class="btn">Войти</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main>
-        <div class="all-price">
-            <div class="ladder">
-                <h1>Прайс-лист</h1>
-                <ul class="ladder">
-                    <li>
-                        <a href="index.html">Главная</a> 
-                    </li>
-                    <li>
-                        <p>Прайс-лист</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="slogan">
-                <h2>Истинно мужская классика</h2>
-            </div>
-            <div class="advantages-price">
-                <div class="advantages">
-                    <h2>Мы используем только<br>
-                    лучшие средства:
-                    </h2>
-                    <ul class="advantages">
-                        <li>BAXTER OF CALIFORNIA</li>
-                        <li>MR NATTY</li>
-                        <li>SUAVECITO</li>
-                        <li>MALIN+GJETZ</li>
-                    </ul>
-                </div>
-                <div class="price">
-                    <h2>Цена на услуги<br>
-                    наших мастеров
-                    </h2>
-                        <!--ТАБЛИЦУ ЛУЧШЕ ДОБАВИТЬ ЧЕРЕЗ CSS-->
-                    <table class="price" border="3" width="300px">
-                        <tbody>
-                            <tr>
-                                <td>Стрижка</td>
-                                <td>1500 ₽</td>
-                            </tr>
-                            <tr>
-                                <td>Стрижка бороды</td>
-                                <td>500 ₽</td>
-                            </tr>
-                            <tr>
-                                <td>Накрутка усов</td>
-                                <td>350 ₽</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="about-us">
-                <h2>Несколько слов о нас:</h2>
-                <div class="about-us-left">
-                    <div class="about-us-text">
-                        наша парикмахерская занимается исключительно мужскими<br>
-                        стрижками. Стрижка каждлого клиента для нас - это уникальная<br>
-                        и продуманная до мелочей работа. Мы не работаем на<br>
-                        количество, мы делаем качество.
-                    </div>
-                </div>
-                <div class="about-us-right">
-                    <div class="about-us-text">
-                        Наша мастерская расположена в центре города, поэтому<br>
-                        сделать стильную стрижку можно в любое время, даже в<br>
-                        обеденный перерыв. Здесь Вы можете погрузиться в удобную<br>
-                        для Вас атмосферу, чувствовать себя комфортно и свободно!
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="footer">
-            <ul class="footer-contakt">
-                <li>
-                    Барбершоп "Бородинский"<br>
-                    Адрес: г. Санкт-Петербург, б. Конюшенная, д. 19/8
-                </li>
-                <li>
-                    <a href="#">Как нас найти?</a>
-                </li>
-                <li>
-                    Телефон: +7(495)666-02-66
-                </li>
-            </ul>
-            <ul class="social-networks">
-                <li>
-                    Давайте дружить!
-                </li>
-                <li>
-                    <a href="#" class="btn-VK">VK</a>
-                </li>
-                <li>
-                    <a href="#" class="btn-FB">Facebook</a>
-                </li>
-                <li>
-                    <a href="#" class="btn-Insta">Instagram</a>
-                </li>
-            </ul>
-            <section class="developer">
-                <p>Разработано:</p>
-                <a href="https://www.energoopora.by/контакты" target="_blank">САНЕЙ</a>
-            </section>
-        </div>
-    </footer>
-    <script scr="javascript/main.js"></script>
+
+<body class="main-page">
+	<header class="header">
+		<nav class="nav">
+			<ul id="menu">
+				<li>
+					<figure class="logo">
+						<a href="index.html">
+							<img src="/img/item/logo-small.png" width="150" alt="Главная страница">
+						</a>
+					</figure>
+				</li>
+				<li>
+					<a href="index.html#info">Информация</a>
+				</li>
+				<li>
+					<a href="index.html#news">Новости</a>
+				</li>
+				<li class="active">
+					<span>Прайс-лист</span>
+				</li>
+				<li>
+					<a href="shop.html">Магазин</a>
+				</li>
+				<li>
+					<a href="index.html#contacts">Контакты</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="user-block">
+			<div class="registration">
+				<button<img src="/img/index/Shape.png">Вход</button>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="all-price">
+			<div class="ladder">
+				<h1>Прайс-лист</h1>
+				<ul class="ladder">
+					<li>
+						<a href="index.html">Главная</a>
+					</li>
+					<li>
+						<p>Прайс-лист</p>
+					</li>
+				</ul>
+			</div>
+			<div class="slogan">
+				<h2>Истинно мужская классика</h2>
+			</div>
+			<div class="advantages-price">
+				<div class="advantages">
+					<h2>Мы используем только<br>
+						лучшие средства:
+					</h2>
+					<ul class="advantages">
+						<li>BAXTER OF CALIFORNIA</li>
+						<li>MR NATTY</li>
+						<li>SUAVECITO</li>
+						<li>MALIN+GJETZ</li>
+					</ul>
+				</div>
+				<div class="price">
+					<h2>Цена на услуги<br>
+						наших мастеров
+					</h2>
+					<!--ТАБЛИЦУ ЛУЧШЕ ДОБАВИТЬ ЧЕРЕЗ CSS-->
+					<table class="price" border="3" width="300px">
+						<tbody>
+							<tr>
+								<td>Стрижка</td>
+								<td>1500 ₽</td>
+							</tr>
+							<tr>
+								<td>Стрижка бороды</td>
+								<td>500 ₽</td>
+							</tr>
+							<tr>
+								<td>Накрутка усов</td>
+								<td>350 ₽</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="about-us">
+				<h2>Несколько слов о нас:</h2>
+				<div class="about-us-left">
+					<div class="about-us-text">
+						наша парикмахерская занимается исключительно мужскими<br>
+						стрижками. Стрижка каждлого клиента для нас - это уникальная<br>
+						и продуманная до мелочей работа. Мы не работаем на<br>
+						количество, мы делаем качество.
+					</div>
+				</div>
+				<div class="about-us-right">
+					<div class="about-us-text">
+						Наша мастерская расположена в центре города, поэтому<br>
+						сделать стильную стрижку можно в любое время, даже в<br>
+						обеденный перерыв. Здесь Вы можете погрузиться в удобную<br>
+						для Вас атмосферу, чувствовать себя комфортно и свободно!
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="footer">
+			<ul class="footer-contakt">
+				<li>
+					Барбершоп "Бородинский"<br>
+					Адрес: г. Санкт-Петербург, б. Конюшенная, д. 19/8
+				</li>
+				<li>
+					<a href="#">Как нас найти?</a>
+				</li>
+				<li>
+					Телефон: +7(495)666-02-66
+				</li>
+			</ul>
+			<ul class="social-networks">
+				<li>
+					Давайте дружить!
+				</li>
+				<li>
+					<a href="#" class="btn-VK">
+						<img src="/img/index/vk.png">
+					</a>
+				</li>
+				<li>
+					<a href="#" class="btn-FB">
+						<img src="/img/index/facebook.png">
+					</a>
+				</li>
+				<li>
+					<a href="#" class="btn-Insta">
+						<img src="/img/index/insta.png">
+					</a>
+				</li>
+			</ul>
+			<section class="developer">
+				<p>Разработано:</p>
+				<a href="https://www.energoopora.by/контакты" target="_blank">САНЕЙ</a>
+			</section>
+		</div>
+		<script scr="javascript/main.js"></script>
+		<!--Всплывающее регистрационное окно-->
+		<div class="registration-pop-up-window">
+			<div class="registration-pop-up-window-close">Закрыть</div>
+			<h2>Личный кабинет</h2>
+			<p>Введите, пожалуйста, свой логин и пароль</p>
+			<form class="login-form" action method>
+				<input type="text" class="icon-user" name="login" placeholder="Логин" required><br>
+				<input type="password" class="icon-password" name="password" placeholder="Пароль" required><br>
+				<input type="checkbox" name="remember" id="remember-me">
+				<label for="remember-me">Запомните меня</label>
+				<a href="#" class="restore">Я забыл пароль!</a><br>
+				<button type="submit" class="btn">Войти</button>
+			</form>
+		</div>
 </body>
+
 </html>
