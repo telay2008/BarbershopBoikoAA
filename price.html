@@ -7,16 +7,16 @@
 	<meta name="author" content="Бойко Александр">
 	<meta name="description" content="прайс-лист барбершопа «Бородинский»">
 	<meta name="keyworlds" content="прайс барбершопа «Бородинский», price barbershop">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/css/normalize.css">
 	<link rel="stylesheet" href="/css/price.css">
-	<link rel="stylesheet" href="/fonts/stylesheet.css">
 	<title>Прайс-лист</title>
 </head>
 
 <body class="main-page">
 	<header class="header">
 		<nav class="nav">
-			<ul id="menu">
+			<ul class="menu-navi">
 				<li>
 					<figure class="logo">
 						<a href="index.html">
@@ -40,18 +40,18 @@
 					<a href="index.html#contacts">Контакты</a>
 				</li>
 			</ul>
+			<ul class="user-navi">
+				<li>
+					<a class="login-link" href="login.html"><img src="/img/index/Shape.png">Вход</a>
+				</li>
+			</ul>
 		</nav>
-		<div class="user-block">
-			<div class="registration">
-				<button<img src="/img/index/Shape.png">Вход</button>
-			</div>
-		</div>
 	</header>
-	<main>
+	<main class="container">
 		<div class="all-price">
-			<div class="ladder">
+			<div class="ladder-block">
 				<h1>Прайс-лист</h1>
-				<ul class="ladder">
+				<ul class="ladder-list">
 					<li>
 						<a href="index.html">Главная</a>
 					</li>
@@ -119,60 +119,76 @@
 			</div>
 		</div>
 	</main>
-	<footer>
-		<div class="footer">
-			<ul class="footer-contakt">
+	<footer class="main-footer">
+		<p class="footer-contacts">
+			Барбершоп "Бородинский"<br>
+			Адрес: г. Санкт-Петербург, б. Конюшенная, д. 19/8<br>
+			<a href="/img/index/maps.svg">Как нас найти?</a>
+			Телефон: +7(495)666-02-66
+		</p>
+		<div class="footer-social">
+			<b>Давайте дружить!</b>
+			<ul>
 				<li>
-					Барбершоп "Бородинский"<br>
-					Адрес: г. Санкт-Петербург, б. Конюшенная, д. 19/8
-				</li>
-				<li>
-					<a href="#">Как нас найти?</a>
-				</li>
-				<li>
-					Телефон: +7(495)666-02-66
-				</li>
-			</ul>
-			<ul class="social-networks">
-				<li>
-					Давайте дружить!
-				</li>
-				<li>
-					<a href="#" class="btn-VK">
+					<a class="social-button" href="#">
 						<img src="/img/index/vk.png">
 					</a>
 				</li>
 				<li>
-					<a href="#" class="btn-FB">
+					<a class="social-button" href="#">
 						<img src="/img/index/facebook.png">
 					</a>
 				</li>
 				<li>
-					<a href="#" class="btn-Insta">
+					<a class="social-button" href="#">
 						<img src="/img/index/insta.png">
-					</a>
 				</li>
 			</ul>
-			<section class="developer">
-				<p>Разработано:</p>
-				<a href="https://www.energoopora.by/контакты" target="_blank">САНЕЙ</a>
-			</section>
 		</div>
-		<script scr="javascript/main.js"></script>
-		<!--Всплывающее регистрационное окно-->
-		<div class="registration-pop-up-window">
-			<div class="registration-pop-up-window-close">Закрыть</div>
-			<h2>Личный кабинет</h2>
-			<p>Введите, пожалуйста, свой логин и пароль</p>
-			<form class="login-form" action method>
-				<input type="text" class="icon-user" name="login" placeholder="Логин" required><br>
-				<input type="password" class="icon-password" name="password" placeholder="Пароль" required><br>
-				<input type="checkbox" name="remember" id="remember-me">
-				<label for="remember-me">Запомните меня</label>
-				<a href="#" class="restore">Я забыл пароль!</a><br>
-				<button type="submit" class="btn">Войти</button>
-			</form>
-		</div>
+		<p class="footer-copyright">
+			<b>Разработано:</b>
+			<a class="button" href="https://www.energoopora.by/контакты" target="_blank">Саней</a>
+		</p>
+	</footer>
+
+	<!--Всплывающее регистрационное окно-->
+	<section class="modal modal-login">
+		<h2>Личный кабинет</h2>
+		<p>Введите свой логин и пароль.</p>
+		<form class="login-form" action="https://www.energoopora.by/" method="post">
+			<p>
+				<label class="visually-hidden" for="user-login">Логин</label>
+				<input class="login-icon-user" id="user-login" type="text" name="login"
+					placeholder="energooporaby@yandex.ru">
+			</p>
+			<P>
+				<label class="visually-hidden" for="user-password">Пароль</label>
+				<input class="login-icon-password" type="password" name="password" placeholder="••••••••">
+			</P>
+			<P class="login-password-info">
+				<label class="login-checkbox"><input type="checkbox" name="remember" class="visually-hidden">
+					<span class="checkbox-indicator"></span>
+					Запомните меня
+				</label>
+				<a class="restore" href="#">Я забыл пароль!</a>
+			</P>
+			<button class="button" type="submit">Войти</button>
+		</form>
+		<button class="model-close" type="button">Закрыть</button>
+	</section>
+
+	<!--Всплывающая карта-->
+	<section class="modal modal-map">
+		<h2 class="visually-hidden">Как до нас добраться</h2>
+		<p>
+			<img src="/img/map/map.svg" width="780" height="560"
+				alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+		</p>
+		<button class="modal-close" type="button">Закрыть</button>
+	</section>
+
+	<script scr="javascript/main.js"></script>
+
 </body>
 
 </html>
