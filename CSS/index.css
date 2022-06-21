@@ -197,3 +197,14 @@ a {
 .restore:focus {
 	text-decoration: none;
 }
+
+.rhombus {
+	position: relative;
+	display: block;
+	left: 50%;
+	margin-left: -10px;
+	width: 28px;
+	height: 28px;
+	transform: rotate(45deg);
+	background: #F7F4F1;
+}
