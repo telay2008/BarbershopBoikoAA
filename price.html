@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="Бойко Александр">
+	<meta name="description" content="прайс-лист барбершопа «Бородинский»">
+	<meta name="keyworlds" content="прайс барбершопа «Бородинский», price barbershop">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="/css/price.css">
+	<title>Прайс-лист</title>
+</head>
+
+<body class="main-page">
+	<header class="header">
+		<nav class="nav">
+			<ul class="menu-navi">
+				<li>
+					<figure class="logo">
+						<a href="index.html">
+							<img src="/img/item/logo-small.png" width="150" alt="Главная страница">
+						</a>
+					</figure>
+				</li>
+				<li>
+					<a href="index.html#info">Информация</a>
+				</li>
+				<li>
+					<a href="index.html#news">Новости</a>
+				</li>
+				<li class="active">
+					<span>Прайс-лист</span>
+				</li>
+				<li>
+					<a href="shop.html">Магазин</a>
+				</li>
+				<li>
+					<a href="index.html#contacts">Контакты</a>
+				</li>
+			</ul>
+			<ul class="user-navi">
+				<li>
+					<a class="login-link" href="login.html"><img src="/img/index/Shape.png">Вход</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main class="container">
+		<div class="all-price">
+			<div class="ladder-block">
+				<h1>Прайс-лист</h1>
+				<ul class="ladder-list">
+					<li>
+						<a href="index.html">Главная</a>
+					</li>
+					<li>
+						<p>Прайс-лист</p>
+					</li>
+				</ul>
+			</div>
+			<div class="slogan">
+				<h2>Истинно мужская классика</h2>
+			</div>
+			<div class="advantages-price">
+				<div class="advantages">
+					<h2>Мы используем только<br>
+						лучшие средства:
+					</h2>
+					<ul class="advantages">
+						<li>BAXTER OF CALIFORNIA</li>
+						<li>MR NATTY</li>
+						<li>SUAVECITO</li>
+						<li>MALIN+GJETZ</li>
+					</ul>
+				</div>
+				<div class="price">
+					<h2>Цена на услуги<br>
+						наших мастеров
+					</h2>
+					<!--ТАБЛИЦУ ЛУЧШЕ ДОБАВИТЬ ЧЕРЕЗ CSS-->
+					<table class="price" border="3" width="300px">
+						<tbody>
+							<tr>
+								<td>Стрижка</td>
+								<td>1500 ₽</td>
+							</tr>
+							<tr>
+								<td>Стрижка бороды</td>
+								<td>500 ₽</td>
+							</tr>
+							<tr>
+								<td>Накрутка усов</td>
+								<td>350 ₽</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="about-us">
+				<h2>Несколько слов о нас:</h2>
+				<div class="about-us-left">
+					<div class="about-us-text">
+						наша парикмахерская занимается исключительно мужскими<br>
+						стрижками. Стрижка каждлого клиента для нас - это уникальная<br>
+						и продуманная до мелочей работа. Мы не работаем на<br>
+						количество, мы делаем качество.
+					</div>
+				</div>
+				<div class="about-us-right">
+					<div class="about-us-text">
+						Наша мастерская расположена в центре города, поэтому<br>
+						сделать стильную стрижку можно в любое время, даже в<br>
+						обеденный перерыв. Здесь Вы можете погрузиться в удобную<br>
+						для Вас атмосферу, чувствовать себя комфортно и свободно!
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="main-footer">
+		<p class="footer-contacts">
+			Барбершоп "Бородинский"<br>
+			Адрес: г. Санкт-Петербург, б. Конюшенная, д. 19/8<br>
+			<a href="/img/index/maps.svg">Как нас найти?</a>
+			Телефон: +7(495)666-02-66
+		</p>
+		<div class="footer-social">
+			<b>Давайте дружить!</b>
+			<ul>
+				<li>
+					<a class="social-button" href="#">
+						<img src="/img/index/vk.png">
+					</a>
+				</li>
+				<li>
+					<a class="social-button" href="#">
+						<img src="/img/index/facebook.png">
+					</a>
+				</li>
+				<li>
+					<a class="social-button" href="#">
+						<img src="/img/index/insta.png">
+				</li>
+			</ul>
+		</div>
+		<p class="footer-copyright">
+			<b>Разработано:</b>
+			<a class="button" href="https://www.energoopora.by/контакты" target="_blank">Саней</a>
+		</p>
+	</footer>
+
+	<!--Всплывающее регистрационное окно-->
+	<section class="modal modal-login">
+		<h2>Личный кабинет</h2>
+		<p>Введите свой логин и пароль.</p>
+		<form class="login-form" action="https://www.energoopora.by/" method="post">
+			<p>
+				<label class="visually-hidden" for="user-login">Логин</label>
+				<input class="login-icon-user" id="user-login" type="text" name="login"
+					placeholder="energooporaby@yandex.ru">
+			</p>
+			<P>
+				<label class="visually-hidden" for="user-password">Пароль</label>
+				<input class="login-icon-password" type="password" name="password" placeholder="••••••••">
+			</P>
+			<P class="login-password-info">
+				<label class="login-checkbox"><input type="checkbox" name="remember" class="visually-hidden">
+					<span class="checkbox-indicator"></span>
+					Запомните меня
+				</label>
+				<a class="restore" href="#">Я забыл пароль!</a>
+			</P>
+			<button class="button" type="submit">Войти</button>
+		</form>
+		<button class="model-close" type="button">Закрыть</button>
+	</section>
+
+	<!--Всплывающая карта-->
+	<section class="modal modal-map">
+		<h2 class="visually-hidden">Как до нас добраться</h2>
+		<p>
+			<img src="/img/map/map.svg" width="780" height="560"
+				alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+		</p>
+		<button class="modal-close" type="button">Закрыть</button>
+	</section>
+
+	<script scr="javascript/main.js"></script>
+
+</body>
+
+</html>

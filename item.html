@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="Бойко Александр">
+	<meta name="description" content="Карточка товара барбершопа «Бородинский»">
+	<meta name="keyworlds" content="Набор для путешествий baxter of california, baxter of california">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="/css/item.css">
+	<title>Карточка товара</title>
+</head>
+
+<body class="main-page">
+	<header class="header">
+		<nav class="nav">
+			<ul class="menu-navi">
+				<li>
+					<figure class="logo">
+						<a href="index.html">
+							<img src="/img/item/logo-small.png" width="150" alt="Главная страница">
+						</a>
+					</figure>
+				</li>
+				<li>
+					<a href="index.html#info">Информация</a>
+				</li>
+				<li>
+					<a href="index.html#news">Новости</a>
+				</li>
+				<li>
+					<a href="price.html">Прайс-лист</a>
+				</li>
+				<li class="active">
+					<span>Магазин</span>
+				</li>
+				<li>
+					<a href="index.html#contacts">Контакты</a>
+				</li>
+			</ul>
+			<ul class="user-navi">
+				<li>
+					<a class="login-link" href="login.html"><img src="/img/index/Shape.png">Вход</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main class="container">
+		<div class="all-item">
+			<div class="ladder-block">
+				<h1>Набор для путешествий "BAXTER OF CALIFORNIA"</h1>
+				<ul class="ladder-list">
+					<li>
+						<a href="index.html">Главная</a>
+					</li>
+					<li>
+						<a href="chop.html">Магазин</a>
+					</li>
+					<li>
+						<a href="chop.html">Средства для ухода</a>
+					</li>
+					<li>
+						<p>Набор для путешествий "BAXTER OF CALIFORNIA"</p>
+					</li>
+				</ul>
+			</div>
+			<div class="photo-description-price-set">
+				<div class="photo-all">
+					<img src="/img/item/Layer-47-copy.jpg" alt="photo-1">
+					<a href="#">
+						<img src="/img/item/Layer-45.svg" alt="photo-2">
+					</a>
+					<a href="#">
+						<img src="/img/item/Layer-46.svg" alt="photo-3">
+					</a>
+					<a href="#">
+						<img src="/img/item/Layer-47.svg" alt="photo-4">
+					</a>
+				</div>
+				<div class="description-price-set">
+					<div class="description">Есть в наличии</div>
+					<div class="artikul">Артикул:
+						<nobr>DEXTER-AE</nobr>
+					</div>
+				</div>
+				<div class="description">
+					<p>TRAVEL KIT - необходимый аксессуар во время любого<br>
+						путешествия, в аккуратной кожанной сумке находится всё, что<br>
+						нужно для бритья и ухода за кожей во время рабочей поездки<br>
+						или отдыха: средство для умывания, увлажняющий крем, крем<br>
+						для бритья, крем после бритья, шампунь. Набор также может<br>
+						стать отличным подарком.
+					</p>
+				</div>
+				<div class="price">2 900 ₽</div>
+				<a class="button" href="#">Купить</a>
+				<h2>В набор входит:</h2>
+				<ul class="set">
+					<li>Средство для умывания (50мл)</li>
+					<li>Увлажняющий крем (50мл)</li>
+					<li>Крем для бритья (50мл)</li>
+					<li>Крем после бритья, шампунь (50мл)</li>
+					<li>Удобная кожаная косметичка</li>
+				</ul>
+			</div>
+		</div>
+	</main>
+
+	<footer class="main-footer">
+		<p class="footer-contacts">
+			Барбершоп "Бородинский"<br>
+			Адрес: г. Санкт-Петербург, б. Конюшенная, д. 19/8<br>
+			<a href="/img/index/maps.svg">Как нас найти?</a>
+			Телефон: +7(495)666-02-66
+		</p>
+		<div class="footer-social">
+			<b>Давайте дружить!</b>
+			<ul>
+				<li>
+					<a class="social-button" href="#">
+						<img src="/img/index/vk.png">
+					</a>
+				</li>
+				<li>
+					<a class="social-button" href="#">
+						<img src="/img/index/facebook.png">
+					</a>
+				</li>
+				<li>
+					<a class="social-button" href="#">
+						<img src="/img/index/insta.png">
+				</li>
+			</ul>
+		</div>
+		<p class="footer-copyright">
+			<b>Разработано:</b>
+			<a class="button" href="https://www.energoopora.by/контакты" target="_blank">Саней</a>
+		</p>
+	</footer>
+
+	<!--Всплывающее регистрационное окно-->
+	<section class="modal modal-login">
+		<h2>Личный кабинет</h2>
+		<p>Введите свой логин и пароль.</p>
+		<form class="login-form" action="https://www.energoopora.by/" method="post">
+			<p>
+				<label class="visually-hidden" for="user-login">Логин</label>
+				<input class="login-icon-user" id="user-login" type="text" name="login"
+					placeholder="energooporaby@yandex.ru">
+			</p>
+			<P>
+				<label class="visually-hidden" for="user-password">Пароль</label>
+				<input class="login-icon-password" type="password" name="password" placeholder="••••••••">
+			</P>
+			<P class="login-password-info">
+				<label class="login-checkbox"><input type="checkbox" name="remember" class="visually-hidden">
+					<span class="checkbox-indicator"></span>
+					Запомните меня
+				</label>
+				<a class="restore" href="#">Я забыл пароль!</a>
+			</P>
+			<button class="button" type="submit">Войти</button>
+		</form>
+		<button class="model-close" type="button">Закрыть</button>
+	</section>
+
+	<!--Всплывающая карта-->
+	<section class="modal modal-map">
+		<h2 class="visually-hidden">Как до нас добраться</h2>
+		<p>
+			<img src="/img/map/map.svg" width="780" height="560"
+				alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+		</p>
+		<button class="modal-close" type="button">Закрыть</button>
+	</section>
+
+	<script scr="javascript/main.js"></script>
+
+</body>
+
+</html>
