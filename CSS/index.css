@@ -311,17 +311,23 @@ input[type="radio"].visually-hidden {
 
 .gallery-button-back {
 	left: 0;
+	cursor: pointer;
 }
 
 .gallery-button-next {
 	right: 0;
+	cursor: pointer;
 }
 
-.contakts {
+.button-send {
+	cursor: pointer;
+}
+
+.contacts {
 	width: 380px;
 }
 
-.contakts p {
+.contacts p {
 	margin: 0;
 	margin-bottom: 25px;
 }
@@ -521,6 +527,49 @@ input[type="radio"].visually-hidden {
 	text-decoration: none;
 }
 
+/* Анимация */
+
+@keyframes bounce {
+	0% {
+		transform: translateY(-2000px);
+	}
+
+	70% {
+		transform: translateY(30px);
+	}
+
+	90% {
+		transform: translateY(-10px);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes shake {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translateX(-10px);
+	}
+
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translateX(10px);
+	}
+}
+
+
 /* Всплывающая форма */
 
 .modal {
@@ -532,6 +581,16 @@ input[type="radio"].visually-hidden {
 	background-position: 0 0;
 	background-repeat: repeat;
 	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-show {
+	display: block;
+
+	animation: bounce 0.6s;
+}
+
+.modal-error {
+	animation: shake 0.6s;
 }
 
 .modal-login {
