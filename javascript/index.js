@@ -1,5 +1,7 @@
 var link = document.querySelector(".login-link");
+console.log(link)
 var popup = document.querySelector(".modal-login");
+console.log(popup)
 var close = popup.querySelector(".modal-close");
 var form = popup.querySelector("form");
 var login = popup.querySelector("[name=login]");
