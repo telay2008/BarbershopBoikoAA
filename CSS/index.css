@@ -599,12 +599,6 @@ input[type="radio"].visually-hidden {
 	padding: 50px 80px;
 }
 
-.modal-show {
-	display: block;
-
-	animation: bounce 0.6s;
-}
-
 .modal-close {
 	position: absolute;
 	top: 0;
@@ -770,14 +764,19 @@ input[type="radio"].visually-hidden {
 	top: 50%;
 	left: 50%;
 
-	overflow: hidden;
-	/* display: none; */
+	display: none;
 	width: 700px;
 	height: 330px;
 	margin-top: -150px;
 	margin-left: -340px;
 
 	border: 7px solid white;
+}
+
+.modal-show {
+	display: block;
+
+	animation: bounce 0.6s;
 }
 
 .modal-map p {

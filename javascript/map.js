@@ -1,16 +1,14 @@
 var button = document.querySelector(".contacts-button-map");
-// var mapPopup = document.querySelector(".modal-map");
-var close = mapPopup.querySelector(".modal-close");
-var mapLink = document.querySelector(".contacts-button-map");
 var mapPopup = document.querySelector(".modal-map");
 var mapClose = mapPopup.querySelector(".modal-close");
+var mapLink = document.querySelector(".contacts-button-map");
 
 button.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	mapPopup.classList.add("modal-show");
 });
 
-close.addEventListener("click", function (evt) {
+mapClose.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	mapPopup.classList.remove("modal-show");
 });
